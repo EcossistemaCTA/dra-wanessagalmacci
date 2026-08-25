@@ -21,24 +21,24 @@ export function FAQSections({
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const faqs = items ?? [
     {
-      question: "Quais são as principais áreas de atuação da Dra. Wanessa Galmacci?",
+      question: "Qual a idade ideal para começar o tratamento?",
       answer:
-        "A Dra. Wanessa é cirurgiã-dentista com atuação voltada para prótese odontológica, odontologia estética, reabilitação do sorriso, restaurações estéticas, recontorno estético com resina, clareamento e harmonização estética do sorriso.",
+        "A primeira avaliação pode ser feita a partir dos 7 anos, quando é possível interceptar alterações do desenvolvimento. Para adultos não há idade limite: dá para alinhar o sorriso em qualquer fase da vida.",
     },
     {
-      question: "O que significa 'a estética começar pela leitura do paciente'?",
+      question: "Alinhador transparente serve para o meu caso?",
       answer:
-        "Significa que não aplicamos padrões genéricos ou procedimentos padronizados. Antes de qualquer tratamento, entendemos a história do paciente, o que seu sorriso representa, suas necessidades funcionais e qual estética harmoniza com sua identidade.",
+        "Depende do diagnóstico. Na avaliação eu analiso mordida, espaço e objetivos, e indico entre aparelho fixo, ortopédico ou alinhador — sempre o que realmente faz sentido para você.",
     },
     {
-      question: "Como funciona o recontorno estético com resina?",
+      question: "Quanto tempo dura o tratamento?",
       answer:
-        "É um tratamento estético minucioso onde moldamos e harmonizamos contornos, formas e proporções dos dentes com resina composta de altíssima qualidade, devolvendo simetria e sofisticação com preservação dental.",
+        "Varia com a complexidade do caso, em média de 12 a 36 meses. Você recebe o planejamento com as etapas explicadas de forma clara desde o início.",
     },
     {
-      question: "Como é agendada a primeira consulta de avaliação?",
+      question: "Como é a primeira consulta?",
       answer:
-        "Na consulta inicial, a Dra. Wanessa realiza uma escuta atenta dos seus objetivos, avalia a saúde funcional e estética da boca e elabora um plano de tratamento personalizado e transparente.",
+        "Conversamos sobre o que te incomoda, faço a avaliação clínica e apresento o plano de tratamento individualizado, com etapas, prazos e valores de forma transparente.",
     },
   ];
 

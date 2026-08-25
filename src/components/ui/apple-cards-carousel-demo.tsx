@@ -1,8 +1,12 @@
 "use client";
 
 import { Card, Carousel, type CarouselItem } from "@/components/ui/apple-cards-carousel";
-import aparelhoFixoImg from "@/assets/aparelho-fixo.png.asset.json";
-import alinhadoresImg from "@/assets/alinhadores.png.asset.json";
+import aparelhoFixoImg from "@/assets/aparelho-fixo.jpg";
+import alinhadoresImg from "@/assets/alinhadores.jpg";
+import ortopedistaImg from "@/assets/ortopedista.jpg";
+import diagnosticoImg from "@/assets/diagnostico.jpg";
+import interceptacaoImg from "@/assets/interceptacao.jpg";
+import manutencaoImg from "@/assets/manutencao.jpg";
 
 const treatmentContent = (
   title: string,
@@ -28,117 +32,115 @@ const treatmentContent = (
 
 const data: CarouselItem[] = [
   {
-    category: "Prótese",
-    title: "Prótese Odontológica",
-    src: aparelhoFixoImg.url,
+    category: "Prótese Fixa",
+    title: "Sorriso renovado e seguro",
+    src: aparelhoFixoImg,
     content: treatmentContent(
-      "Prótese Odontológica",
-      "Reconstituição e substituição de dentes ausentes ou danificados, devolvendo estética natural, estabilidade e total eficiência mastigatória.",
+      "Prótese Fixa & Sobre Implante",
+      "Correção da mastigação, espaço e estética facial com coroas e pontes em cerâmica de alta resistência com encaixe perfeito.",
       [
-        "Recuperação da função mastigatória e saúde bucal.",
-        "Planejamento sofisticado e alinhado com suas feições.",
-        "Material de alta qualidade e durabilidade.",
+        "Devolução completa da segurança ao mastigar e sorrir.",
+        "Materiais cerâmicos de alta durabilidade e estética natural.",
+        "Planejamento individualizado para cada tipo de reabilitação.",
       ],
     ),
   },
   {
-    category: "Estética",
-    title: "Odontologia Estética",
-    src: alinhadoresImg.url,
+    category: "Lentes & Facetas",
+    title: "Harmonia e naturalidade",
+    src: alinhadoresImg,
     content: treatmentContent(
-      "Odontologia Estética",
-      "Harmonização do sorriso com foco em proporções naturais, respeitando a anatomia individual e a essência de cada paciente.",
+      "Lentes de Contato & Facetas Cerâmicas",
+      "Laminados cerâmicos ultrafinos planejados para transformar cor, formato e harmonia do sorriso com mínima intervenção.",
       [
-        "Análise visual e estética minuciosa do rosto.",
-        "Tratamentos delicados e altamente personalizados.",
-        "Resultados elegantes longe da estética padronizada.",
+        "Planejamento digital do sorriso antes do procedimento.",
+        "Preservação máxima da estrutura dental natural.",
+        "Resultado harmônico sob medida para suas feições.",
       ],
     ),
   },
   {
-    category: "Reabilitação",
-    title: "Reabilitação do Sorriso",
+    category: "Reabilitação Oral",
+    title: "Função e beleza integradas",
+    src: ortopedistaImg,
     content: treatmentContent(
-      "Reabilitação do Sorriso",
-      "Visão integrada para reconstruir sorrisos comprometidos, unindo prótese, estética e saúde em um plano de tratamento harmonioso.",
+      "Reabilitação Oral Completa",
+      "Tratamento integrado para recuperar a estabilidade mastigatória, dimensão vertical e a beleza estética do seu sorriso.",
       [
-        "Visão global da anatomia dental e mastigatória.",
-        "Tratamento estruturado em etapas claras e previsíveis.",
-        "Restabelecimento da confiança e autoestima.",
+        "Visão global da saúde, estética e função mastigatória.",
+        "Recuperação de dentes desgastados ou perdidos.",
+        "Conforto articular e harmonia facial duradoura.",
       ],
     ),
   },
+
   {
-    category: "Restauração",
-    title: "Restaurações Estéticas",
+    category: "Diagnóstico Estético",
+    title: "Plano individualizado",
+    src: diagnosticoImg,
     content: treatmentContent(
-      "Restaurações Estéticas",
-      "Reconstrução precisa de dentes com fraturas ou cáries, utilizando materiais de ponta que mimetizam a cor e textura natural do dente.",
+      "Avaliação e Diagnóstico Estético",
+      "Análise minuciosa da estética facial e dental para desenhar a solução mais elegante e conservadora para você.",
       [
-        "Preservação da estrutura dental original.",
-        "Acabamento imperceptível e harmônico.",
-        "Resistência e alta estética com resinas modernas.",
+        "Exames clínicos e fotografias de alta resolução.",
+        "Estratégia personalizada para os seus objetivos.",
+        "Transparência em prazos, etapas e materiais utilizados.",
       ],
     ),
   },
+
   {
-    category: "Harmonização",
-    title: "Recontorno Estético com Resina",
+    category: "Restaurações Estéticas",
+    title: "Preservação e precisão",
+    src: interceptacaoImg,
     content: treatmentContent(
-      "Recontorno Estético com Resina",
-      "Ajuste sutil de bordas, formatos e pequenas assimetrias dentárias para alcançar proporções ideais sem desgaste invasivo.",
+      "Restaurações em Resina & Porcelana",
+      "Substituição de restaurações antigas ou escuras por materiais modernos invisíveis que devolvem a força e a beleza aos dentes.",
       [
-        "Procedimento minimamente invasivo.",
-        "Harmonização imediata do sorriso.",
-        "Resinas de alta tecnologia e excelente brilho.",
+        "Técnicas adesivas de alta performance.",
+        "Acabamento e polimento com brilho natural.",
+        "Prevenção de infiltrações e fraturas dentais.",
       ],
     ),
   },
+
   {
-    category: "Luminosidade",
-    title: "Clareamento Dental",
+    category: "Próteses & Manutenção",
+    title: "Resultado duradouro",
+    src: manutencaoImg,
     content: treatmentContent(
-      "Clareamento Dental",
-      "Tratamento seguro e guiado para renovar o brilho e a tonalidade dos dentes com proteção ao esmalte dental.",
+      "Próteses Removíveis & Manutenção",
+      "Acompanhamento preventivo e confecção de próteses modernas para assegurar o máximo de conforto, firmeza e estabilidade.",
       [
-        "Protocolo seguro e individualizado.",
-        "Realce do brilho e luminosidade natural.",
-        "Acompanhamento profissional contínuo.",
+        "Acompanhamento regular para higienização e ajustes.",
+        "Estabilidade das próteses e saúde gengival.",
+        "Foco na longevidade dos trabalhos protéticos.",
       ],
     ),
   },
-  {
-    category: "Proporção",
-    title: "Harmonia e Proporção do Sorriso",
-    content: treatmentContent(
-      "Harmonia, Proporção e Leitura",
-      "Desenvolvimento de sorrisos equilibrados onde a estética nasce da leitura detalhada da personalidade e das feições do paciente.",
-      [
-        "Análise estética e facial personalizada.",
-        "Respeito às características individuais.",
-        "Alinhamento perfeito entre estética, função e identidade.",
-      ],
-    ),
-  },
+
 ];
 
 export default function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => <Card key={card.title} card={card} index={index} />);
 
   return (
-    <section className="bg-sand px-6 py-24 font-sans md:px-10 md:py-32">
-      <div className="mx-auto max-w-6xl">
-        <div className="max-w-2xl">
-          <p className="text-[0.65rem] uppercase tracking-[0.4em] text-gold-deep">Áreas de Atuação</p>
-          <h2 className="mt-4 font-display text-3xl leading-tight text-deep md:text-5xl">
-            Principais áreas de atuação e tratamentos.
+    <section className="bg-sand px-6 py-24 font-sans md:px-10 md:py-36">
+      <div className="mx-auto max-w-5xl">
+        <div className="text-center">
+          <span className="mb-3 inline-block text-[0.65rem] font-bold uppercase tracking-[0.35em] text-gold-deep">
+            ESPECIALIDADES & TRATAMENTOS
+          </span>
+          <h2 className="mx-auto max-w-3xl font-sans text-3xl font-bold leading-[1.18] tracking-tight text-deep sm:text-4xl md:text-5xl">
+            Prótese & Estética pensadas para <br className="hidden sm:inline" />
+            <span className="font-serif italic font-normal text-gold-deep">transformar o seu</span> sorriso.
           </h2>
-          <p className="mt-4 text-base text-deep-soft">
-            Tratamentos voltados para a estética, prótese e reabilitação do sorriso com leitura atenta do paciente.
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#525f61] md:text-lg">
+            Diagnóstico sincero, planejamento individualizado e <strong className="font-semibold text-deep">opções de tratamento sob medida</strong> para devolver sua função mastigatória e autoestima.
           </p>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-16">
           <Carousel items={cards} />
         </div>
       </div>
